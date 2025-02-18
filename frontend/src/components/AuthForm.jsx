@@ -14,7 +14,8 @@ const AuthForm = ({ type }) => {
 
       if (type === "login") {
         localStorage.setItem("token", data.token);
-        navigate("/");
+        console.log("Item Set")
+        window.location.href = "/";
       } else {
         navigate("/login");
       }
